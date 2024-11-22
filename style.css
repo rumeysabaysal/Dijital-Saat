@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(flower.jpg);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.clock {
+    font-size: 10rem;
+    
+    border-radius: 10px;
+    position: absolute;
+    top: 35%;
+    color: white;
+    /* filter: drop-shadow(1px 1px 20px yellow); */
+   
+    
+
+}
+
+/* @media (max-width: 1380px) {
+    .clock {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .clock {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .clock {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .clock {
+        font-size: 2.5rem;
+    } */
+
+    /* .img{
+        
+       transform: rotate(90deg);
+    } */

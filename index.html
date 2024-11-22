@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Saat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div id="clock" class="clock"></div>
+    </div>
+
+    <script>
+    
+    function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    const clock = document.getElementById('clock');
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// Saati her saniye güncelle
+setInterval(updateClock, 1000);
+updateClock(); // Sayfa yüklendiğinde hemen güncelle
+    </script>
+</body>
+</html>
